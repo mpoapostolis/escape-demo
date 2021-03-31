@@ -1,14 +1,10 @@
+using System;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+[Serializable]
+public class Dialogue
 {
-    // Start is called before the first frame update
-    private void Start()
-    {
-    }
-
-    // Update is called once per frame
-    private void Update()
-    {
-    }
+    public string name;
+    [TextArea(3,10)]
+    public string description;
 }
