@@ -5,6 +5,7 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     private GameObject _dialogBox;
     private GameObject _hero;
+    private bool isActive;
 
 
     private void Start()
@@ -13,19 +14,20 @@ public class DialogueTrigger : MonoBehaviour
         _dialogBox = GameObject.FindGameObjectWithTag("DialogBox");
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         transform.LookAt(_hero.transform.position);
-        Debug.Log(transform.position);
-        if (Vector3.Distance(_hero.transform.position, transform.position) < 1.8f)
+        isActive = Vector3.Distance(_hero.transform.position, transform.position) < 1.8f;
+        if (isActive)
         {
             _dialogBox.SetActive(true);
             TriggerDialog();
         }
-        else
+        else if (Vector3.Distance(_hero.transform.position, transform.position) < 3f)
         {
             _dialogBox.SetActive(false);
         }
+
     }
 
     public void TriggerDialog()

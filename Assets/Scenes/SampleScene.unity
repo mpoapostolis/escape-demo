@@ -145,6 +145,7 @@ MonoBehaviour:
     description: 'Hold shift to run,
 
       Press left click to attack'
+  _dialogBox: {fileID: 1457712563}
 --- !u!136 &158436651
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -944,6 +945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maria
       objectReference: {fileID: 0}
+    - target: {fileID: 1896801731341158, guid: a367f32b0351f2648a0e15f3444c6f86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4080208459921836, guid: a367f32b0351f2648a0e15f3444c6f86, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1141,6 +1146,7 @@ MonoBehaviour:
   dialogue:
     name: Helen
     description: Hello i am Helen
+  _dialogBox: {fileID: 1457712563}
 --- !u!136 &1622278338
 CapsuleCollider:
   m_ObjectHideFlags: 0
