@@ -12,6 +12,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         _hero = GameObject.FindGameObjectWithTag("Player");
         _dialogBox = GameObject.FindGameObjectWithTag("DialogBox");
+        _dialogBox.SetActive(false);
     }
 
     private void LateUpdate()

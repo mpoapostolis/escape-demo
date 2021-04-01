@@ -145,7 +145,6 @@ MonoBehaviour:
     description: 'Hold shift to run,
 
       Press left click to attack'
-  _dialogBox: {fileID: 1457712563}
 --- !u!136 &158436651
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1146,7 +1145,6 @@ MonoBehaviour:
   dialogue:
     name: Helen
     description: Hello i am Helen
-  _dialogBox: {fileID: 1457712563}
 --- !u!136 &1622278338
 CapsuleCollider:
   m_ObjectHideFlags: 0
