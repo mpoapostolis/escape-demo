@@ -10,6 +10,7 @@ public class DialogueTrigger: MonoBehaviour {
 
     private void Start() {
         _hero = GameObject.FindGameObjectWithTag("Player");
+        _dialogBox.SetActive(false);
     }
 
     public void TriggerDialog() {
